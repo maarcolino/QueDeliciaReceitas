@@ -1,45 +1,304 @@
+/**--vermelhoLayout: #b22222;
+    --BrancoLayout: #FFFFFF;
+    --backgroundCard: #ff6961;
+    --bordaLayout: #ffa1b1;
+    --AmareloLayout: #b81414;
+
+
 /** 
-Folha do estilo do site Que Delicia
-@author Enzo Marcolino Lula de Oliveira
-@link https://github.com/maarcolino/QueDeliciaReceitas
+Folha de estilo do site Alv Burger
+@author João Victor Santos de Oliveira
+@link https://16joaovso.github.io/Alv-Burger-Projeto/
 */
 
+/* importar fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kalam:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* variaveis globais */
+
+:root {
+    --cinzalayout: #525252;
+    --brancolayout: #ffffff;
+    --skyBlue: #87CEEB;
+    --vermelhoLayout: #b22222;
+    --BrancoLayout: #FFFFFF;
+    --backgroundCard: #ffffff;
+    --bordaLayout: #000;
+    --AmareloLayout: yellow;
+}
+
 /* CSS RESET*/
-{
+* {
     margin: 0;
     padding: 0;
     border: 0;
+
 }
 
-/* Importar fontes */
-
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Kalam:wght@300;400;700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap')
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html {
+    scroll-behavior: smooth;
+}
 
 
 body {
-    font-family: "Kalam", "Fredoka";
+    font-family: "Fredoka", "Kalam";
+    font-size: 1em;
 }
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (max-width: 575px) {
-    body {
-        background-color: gray;
-    }
+.Container {
+
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
 }
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.Flex,
+.FlexMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Flex {
+    flex-direction: column;
+}
+
+/* Cartão */
+.Card {
+    margin-top: 30px;
+    width: 250px;
+    right: 100px;
+    height: 350px;
+    background-color: var(--backgroundCard);
+    border: 2px solid var(--bordaLayout);
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--cinzalayout);
+    color: var(--BrancoLayout);
+    padding: 4px 50px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* Topo */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>*/
+/**************** Cabeçalho ****************/
+header {
+    height: 100px;
+    background-color: var(--cinzalayout);
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin: 2px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+ 
+label {
+    color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    font-size: 3em;
+    top: 20px;
+    right: 25px;
+}
+ 
+nav ul {
+    list-style: none;
+    background-color: rgba(82,82,82,0.96);
+    height: 100vh;
+    position: fixed;
+    top: 100px;
+    right: -60%;
+    width: 60%;
+    transition: all 0.3s;
+}
+
+/* ativar checkbox */
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--bordaLayout);
+    text-align: right;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancolayout);
+}
+
+/**************** Rodapé ****************/
+/*FOOTER*/
+footer {
+    background-color: var(--cinzalayout);
+    color: var(--BrancoLayout);
+    text-align: center;
+}
+
+#social {
+    margin-top: 25px;
+}
+
+
+/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-    body {
-        background-color: white;
+    /* Cabeçalho */
+
+    .Container {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header {
+        max-width: 540px;
+        margin: 0 auto;
+
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
     }
 }
 
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>*/
+
 @media (min-width: 768px) {
-    body {
-        background-color: gray;
+
+    /*Layout*/
+    .Container {
+        max-width: 720px;
+    }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 720px;
+        height: 100px;
+        background-color: lightsalmon;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+        margin: 2px 0px 0px 2px;
+    }
+
+}
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 992px) {
+    .Container {
+        max-width: 960px;
+    }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 992px;
     }
 }
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>*/
-/* PCs ou notebooks em FULL HD >>>>>>>>>>>>>>>>> */
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 1140px;
+        height: 100px;
+        background-color: lightsalmon;
+    }
+
+    #logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    label{
+        display: none;
+    }
+
+    /*menu lateral */
+    nav ul {
+        background-color: rgba(82,82,82,0.96);
+        height: auto;
+        position: static;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+}
+
+/* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1400px) {}
+
+/*Cabeçalho*/
+.header {
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+}
