@@ -203,8 +203,8 @@ footer {
     }
 
     #logo img {
-        width: 200px;
-        height: 80px;
+        width: 532px;
+        height: 149px;
     }
 
     #logo h1 {
@@ -253,7 +253,7 @@ footer {
         background-size: cover;
         text-align: center;
     }
-
+    }
 
 
     /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -272,7 +272,7 @@ footer {
     /* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
 
     @media (min-width: 1200px) {
-        .container {
+        .Container {
             max-width: 1140px;
             padding: 15px 15px 50px 15px;
         }
@@ -286,7 +286,8 @@ footer {
 
         #logo img {
             width: 200px;
-            height: 80px;
+            height: 70px;
+            padding: 15px 15px 50px 15px;
         }
 
 
@@ -300,7 +301,7 @@ footer {
             height: auto;
             position: static;
             width: 100%;
-            margin-top: 50px;
+            margin-top: 10px;
         }
 
         nav ul li {
