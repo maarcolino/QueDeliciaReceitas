@@ -18,7 +18,7 @@
     --BrancoLayout: #FFFFFF;
     --backgroundCard: #ffffff;
     --bordaLayout: #000;
-    --AmareloLayout: yellow;
+    --laranjaLayout: #eb4f37;
 }
 
 /* CSS RESET*/
@@ -41,9 +41,9 @@ body {
 }
 
 .Container {
-
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
+    margin-top: 30px;
 }
 
 .Flex,
@@ -84,7 +84,7 @@ body {
 
 .Button {
     text-decoration: none;
-    background-color: var(--cinzalayout);
+    background-color: var(--laranjaLayout);
     color: var(--BrancoLayout);
     padding: 4px 50px;
     border-radius: 25px;
@@ -103,12 +103,12 @@ body {
 /**************** Cabeçalho ****************/
 header {
     height: 100px;
-    background-color: var(--cinzalayout);
+    background-color: var(--laranjaLayout);
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     margin: 2px 0px 0px 10px;
 }
 
@@ -151,10 +151,27 @@ nav ul li a {
     color: var(--brancolayout);
 }
 
+/*** banner ***/
+
+main {
+    background: url(./img/background.jpg);
+    height: 50vh;
+    background-size: cover;
+    text-align: center;
+}
+
+main h1, h2 {
+    font-family: "Fredoka";
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--BrancoLayout)
+}
+
 /**************** Rodapé ****************/
 /*FOOTER*/
 footer {
-    background-color: var(--cinzalayout);
+    background-color: var(--laranjaLayout);
     color: var(--BrancoLayout);
     text-align: center;
 }
@@ -186,8 +203,12 @@ footer {
     }
 
     #logo img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 80px;
+    }
+
+    #logo h1 {
+        color: var(--BrancoLayout);
     }
 
     .Flex {
@@ -220,76 +241,95 @@ footer {
     }
 
     #logo img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 80px;
         margin: 2px 0px 0px 40px;
     }
 
-}
-
-/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
-
-@media (min-width: 992px) {
-    .Container {
-        max-width: 960px;
+    /* Banner */
+    main {
+        background: url(./img/background.jpg);
+        height: 50vh;
+        background-size: cover;
+        text-align: center;
     }
+
+
+
+    /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+    @media (min-width: 992px) {
+        .Container {
+            max-width: 960px;
+        }
+
+        /*Cabeçalho*/
+        .header {
+            max-width: 992px;
+        }
+    }
+
+    /* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+            padding: 15px 15px 50px 15px;
+        }
+
+        /*Cabeçalho*/
+        .header {
+            max-width: 1140px;
+            height: 100px;
+            background-color: lightsalmon;
+        }
+
+        #logo img {
+            width: 200px;
+            height: 80px;
+        }
+
+
+        label {
+            display: none;
+        }
+
+        /*menu lateral */
+        nav ul {
+            background-color: rgba(82, 82, 82, 0.96);
+            height: auto;
+            position: static;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        nav ul li {
+            border: 0;
+            float: left;
+        }
+
+        /* Banner */
+        main {
+            background: url(./img/background.jpg);
+            height: 50vh;
+            background-size: cover;
+            text-align: center;
+        }
+
+        main h1,h2 {
+            font-family: "Fredoka";
+            bottom: 200%;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+            color: var(--BrancoLayout)
+        }
+    }
+
+    /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
+
+    @media (min-width: 1400px) {}
 
     /*Cabeçalho*/
     .header {
-        max-width: 992px;
-    }
-}
-
-/* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-
-    /*Cabeçalho*/
-    .header {
-        max-width: 1140px;
         height: 100px;
         background-color: lightsalmon;
     }
-
-    #logo img {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    label {
-        display: none;
-    }
-
-    /*menu lateral */
-    nav ul {
-        background-color: rgba(82, 82, 82, 0.96);
-        height: auto;
-        position: static;
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    nav ul li {
-        border: 0;
-        float: left;
-    }
-}
-
-/* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
-
-@media (min-width: 1400px) {}
-
-/*Cabeçalho*/
-.header {
-    height: 100px;
-    background-color: lightsalmon;
-}
-
-#logo img {
-    width: 100px;
-    height: 100px;
-}
