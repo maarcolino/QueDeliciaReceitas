@@ -42,20 +42,32 @@ body {
 
 .Container {
     margin: 0 auto;
-    padding: 50px 15px 50px 15px;
-    margin-top: 30px;
+    padding: 10px 15px 50px 15px;
 }
 
 .Flex,
-.FlexMenu {
+.FlexCard,
+.FlexMenu,
+.FlexSection {
     display: flex;
-    justify-content: space-between;
 }
 
 .Flex {
     flex-direction: column;
 }
 
+.FlexCard {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.FlexMenu {
+    justify-content: space-between;
+}
+
+.FlexSection {
+    align-items: center;
+}
 /* Cartão */
 .Card {
     margin-top: 30px;
@@ -109,7 +121,6 @@ header {
 #logo img {
     width: 200px;
     height: 80px;
-    margin: 2px 0px 0px 10px;
 }
 
 #check {
@@ -172,12 +183,16 @@ main h1, h2 {
 /*FOOTER*/
 footer {
     background-color: var(--laranjaLayout);
-    color: var(--BrancoLayout);
+    color: var(--branco);
     text-align: center;
 }
 
 #social {
-    margin-top: 25px;
+    margin-bottom: -25px;
+}
+
+#copyright {
+    margin-top: 20px;
 }
 
 
@@ -274,7 +289,7 @@ footer {
     @media (min-width: 1200px) {
         .Container {
             max-width: 1140px;
-            padding: 15px 15px 50px 15px;
+            padding: 0px 15px 50px 15px;
         }
 
         /*Cabeçalho*/
@@ -301,7 +316,7 @@ footer {
             height: auto;
             position: static;
             width: 100%;
-            margin-top: 10px;
+            margin-top: 25px;
         }
 
         nav ul li {
@@ -323,6 +338,8 @@ footer {
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
             color: var(--BrancoLayout)
         }
+        
+        
     }
 
     /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
