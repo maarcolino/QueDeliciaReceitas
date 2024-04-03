@@ -41,12 +41,18 @@ body {
 }
 
 .Container {
-    margin: 0 auto;
+    display: flex;
     padding: 10px 15px 50px 15px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
 .Flex,
-.FlexCard,
 .FlexMenu,
 .FlexSection {
     display: flex;
@@ -56,10 +62,6 @@ body {
     flex-direction: column;
 }
 
-.FlexCard {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
 .FlexMenu {
     justify-content: space-between;
@@ -71,6 +73,7 @@ body {
 /* Cartão */
 .Card {
     margin-top: 30px;
+    margin-right: 30px;
     width: 250px;
     right: 100px;
     height: 350px;
@@ -78,7 +81,6 @@ body {
     border: 2px solid var(--bordaLayout);
     border-radius: 15px;
     text-align: center;
-
 }
 
 .Card img {
@@ -95,10 +97,11 @@ body {
 }
 
 .Button {
+    position: static;
     text-decoration: none;
     background-color: var(--laranjaLayout);
     color: var(--BrancoLayout);
-    padding: 4px 50px;
+    padding: 5px 20px;
     border-radius: 25px;
     font-size: 1em;
     font-weight: normal;
@@ -127,6 +130,8 @@ header {
     height: 100px;
     background-color: var(--laranjaLayout);
 }
+
+
 
 #logo img {
     width: 200px;
@@ -161,6 +166,7 @@ nav ul {
     right: 0px;
 }
 
+
 nav ul li {
     border-bottom: 0.5px solid var(--bordaLayout);
     text-align: right;
@@ -181,7 +187,6 @@ main {
     text-align: center;
 }
 
-Intro
 
 main h1, h2 {
     font-family: "Fredoka";
@@ -307,7 +312,6 @@ footer {
     @media (min-width: 1200px) {
         .Container {
             max-width: 1140px;
-            padding: 0px 15px 50px 15px;
         }
 
         /*Cabeçalho*/
@@ -320,7 +324,8 @@ footer {
         #logo img {
             width: 200px;
             height: 70px;
-            padding: 15px 15px 50px 15px;
+
+            padding: 0px 35px 50px 15px;
         }
 
 
@@ -364,16 +369,12 @@ footer {
             color:var(--BrancoLayout)
         }
 
-
-
         main h1,h2 {
             font-family: "Fredoka";
             bottom: 200%;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
             color: var(--BrancoLayout)
         }
-        
-        
     }
 
     /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
@@ -385,3 +386,4 @@ footer {
         height: 100px;
         background-color: lightsalmon;
     }
+    
