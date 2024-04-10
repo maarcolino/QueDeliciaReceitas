@@ -259,7 +259,6 @@ footer {
 
 #copyright {
     margin-top: 20px;
-    
 }
 
 
@@ -356,6 +355,11 @@ footer {
 @media (min-width: 1200px) {
     .Container {
         max-width: 1140px;
+    }
+
+    #copyright {
+        margin-top: 20px;
+        margin-left: 700px;
     }
 
     /* CARRONOSSOS*/
