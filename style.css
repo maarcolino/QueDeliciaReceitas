@@ -70,6 +70,7 @@ body {
 .FlexSection {
     align-items: center;
 }
+
 /* Cartão */
 .Card {
     margin-top: 30px;
@@ -105,7 +106,7 @@ body {
     bottom: 10px;
 }
 
-  /* Introdução */
+/* Introdução */
 #destaqueIntro {
     display: inline;
 }
@@ -130,11 +131,11 @@ header {
     z-index: -1;
 }
 
-.carousel{
+.carousel {
     display: flex;
     width: 100%;
     animation: pri-slide 10s infinite;
-    transition: transform 0.5 ease;
+    transition: transform 0.5s ease;
     margin-left: 10px;
     height: 560px;
     z-index: -1;
@@ -229,7 +230,8 @@ main {
 }
 
 
-main h1, h2 {
+main h1,
+h2 {
     font-family: "Fredoka";
     font-weight: 400;
     margin-bottom: 50px;
@@ -257,6 +259,7 @@ footer {
 
 #copyright {
     margin-top: 20px;
+    
 }
 
 
@@ -332,99 +335,117 @@ footer {
         background-size: cover;
         text-align: center;
     }
+}
+
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 992px) {
+    .Container {
+        max-width: 960px;
     }
-
-
-    /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>*/
-
-    @media (min-width: 992px) {
-        .Container {
-            max-width: 960px;
-        }
-
-        /*Cabeçalho*/
-        .header {
-            max-width: 992px;
-        }
-    }
-
-    /* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
-
-    @media (min-width: 1200px) {
-        .Container {
-            max-width: 1140px;
-        }
-
-        /*Cabeçalho*/
-        .header {
-            max-width: 1140px;
-            height: 100px;
-            background-color: lightsalmon;
-        }
-
-        #logo img {
-            width: 200px;
-            height: 70px;
-
-            padding: 0px 35px 50px 15px;
-        }
-
-
-        label {
-            display: none;
-        }
-
-        /*menu lateral */
-        nav ul {
-            background-color: rgba(82, 82, 82, 0.96);
-            height: auto;
-            position: static;
-            width: 100%;
-            margin-top: 25px;
-        }
-
-        nav ul li {
-            border: 0;
-            float: left;
-        }
-
-        /* Banner */
-        main {
-            background: url(./img/background.jpg);
-            height: 50vh;
-            background-size: cover;
-            text-align: center;
-        }
-
-        #intro {
-            background: url(./img/bannersobre.jpg);
-            height: 50vh;
-            background-size: cover;
-            text-align: center;
-            padding: 100px 10px 10px 10px;
-        }
-
-        #textoIntro h1 {
-            font-family: kalam;
-            padding: 60px 10px 10px 10px;
-            color:var(--BrancoLayout)
-        }
-
-        main h1,h2 {
-            font-family: "Fredoka";
-            bottom: 200%;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
-            color: var(--BrancoLayout)
-        }
-    }
-
-    /* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
-
-    @media (min-width: 1400px) {}
 
     /*Cabeçalho*/
     .header {
+        max-width: 992px;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1200px) {
+    .Container {
+        max-width: 1140px;
+    }
+
+    /* CARRONOSSOS*/
+
+    .carousel {
+        animation: pri-slide  infinite;
+    }
+
+    .Button {
+        position: static;
+        text-decoration: none;
+        margin-top: 100px;
+        background-color: var(--laranjaLayout);
+        color: var(--BrancoLayout);
+        padding: 5px 20px;
+        border-radius: 25px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    /*Cabeçalho*/
+    .header {
+        max-width: 1140px;
         height: 100px;
         background-color: lightsalmon;
     }
-    
+
+    #logo img {
+        width: 200px;
+        height: 70px;
+
+        padding: 0px 35px 50px 15px;
+    }
+
+
+    label {
+        display: none;
+    }
+
+    /*menu lateral */
+    nav ul {
+        background-color: rgba(82, 82, 82, 0.96);
+        height: auto;
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    /* Banner */
+    main {
+        background: url(./img/background.jpg);
+        height: 50vh;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #intro {
+        background: url(./img/bannersobre.jpg);
+        height: 50vh;
+        background-size: cover;
+        text-align: center;
+        padding: 100px 10px 10px 10px;
+    }
+
+    #textoIntro h1 {
+        font-family: kalam;
+        padding: 60px 10px 10px 10px;
+        color: var(--BrancoLayout)
+    }
+
+    main h1,
+    h2 {
+        font-family: "Fredoka";
+        bottom: 200%;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+        color: var(--BrancoLayout)
+    }
+}
+
+/* PCs TV notebooks Full HD +>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 1400px) {}
+
+/*Cabeçalho*/
+.header {
+    height: 100px;
+    background-color: lightsalmon;
+}
