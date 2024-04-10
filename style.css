@@ -42,7 +42,7 @@ body {
 
 .Container {
     display: flex;
-    padding: 10px 15px 50px 15px;
+    padding: 10px 15px 10px 15px;
 }
 
 .container {
@@ -255,6 +255,7 @@ footer {
 
 #social {
     margin-bottom: -25px;
+    
 }
 
 #copyright {
@@ -300,6 +301,7 @@ footer {
 
     #social {
         margin: 0;
+        margin-top: 10px;
     }
 }
 
@@ -358,7 +360,7 @@ footer {
     }
 
     #copyright {
-        margin-top: 20px;
+        margin-top: 30px;
         margin-left: 700px;
     }
 
