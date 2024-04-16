@@ -1,7 +1,8 @@
 ![GitHub License](https://img.shields.io/github/license/maarcolino/QueDeliciaReceitas)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fmaarcolino.github.io%2FQueDeliciaReceitas%2F)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fmaarcolino.github.io%2FQueDeliciaReceitas%2F)
-![QrCode](https://maarcolino.github.io/QueDeliciaReceitas/)
+![QrCode](https://maarcolino.github.io/QueDeliciaReceitas/)![qrcode_maarcolino github io](https://github.com/maarcolino/QueDeliciaReceitas/assets/75769214/52f09acf-761e-4aa0-958b-42605faca198)
+
 
 
 # QueDeliciaReceitas
