@@ -4,8 +4,11 @@
 ![QrCode](https://maarcolino.github.io/QueDeliciaReceitas/)
 
 
+
 # QueDeliciaReceitas
 Este repositório hospeda o Que Delicia
+
+![image](https://github.com/maarcolino/QueDeliciaReceitas/assets/75769214/30983af6-1e9f-4d8f-8693-991488684580)
 ## Autor
 Enzo Marcolino Lula de Oliveira
 ## Links Utilizados
